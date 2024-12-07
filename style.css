@@ -231,6 +231,21 @@ section {
     margin: 10px;
 }
 
+.container-struktur{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-struktur h1{
+    display: inline-block;
+    width: 25%;
+}
+
+.wave{
+    margin-bottom: -5px;
+}
+
 /* Styling untuk footer */
 footer {
     background-color: #D2DEA7; /* Ganti dengan warna latar yang diinginkan */
@@ -263,6 +278,11 @@ footer img {
 
 .contact-info p {
     margin: 5px 0; /* Jarak antar teks */
+}
+
+.strukturImg{
+    margin-top: 100px;
+    width: 1027px;
 }
 
 /* Media Query untuk responsif pada layar kecil */
