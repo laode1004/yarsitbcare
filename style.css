@@ -105,7 +105,7 @@ section {
 
 /* Hero Section */
 .hero {
-    background-image: url('yrs.jpg'); /* Replace with your image path */
+    background-image: url('asset/yrs.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center 20%;
     color: #fff;
