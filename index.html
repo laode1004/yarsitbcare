@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YARSI TB Care</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <a href="#"><img src="logo.png" alt="Logo Yarsi" height="50"></a>
+            <div class="nav-links">
+                <a href="#">Beranda</a>
+                <div class="nav-item">
+                    <div class="dropdown">
+                        <a href="#">Tentang Kami</a>
+                        <div class="dropdown-content">
+                            <a href="#">Profil & Sejarah</a>
+                            <a href="#">Visi & Misi</a>
+                            <a href="#">Struktur</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#kegiatan">Kegiatan</a>
+                <a href="#">Galeri</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="display-4">Selamat Datang di YARSI TB Care</h1>
+        <h1>Jakarta Pusat</h1>
+        <p>YARSI TB Care Jakarta Pusat hadir sebagai bagian dari upaya pemberantasan Tuberkulosis di Indonesia. Kami berkomitmen memberikan dukungan terbaik dalam edukasi, pencegahan, serta pengobatan TBC untuk menciptakan masyarakat yang lebih sehat dan bebas TBC.</p>
+    </section>
+
+    <!-- Kegiatan Section -->
+    <section class="kegiatan" id="kegiatan">
+        <h2>Kegiatan YARSI TB Care</h2>
+        <div class="row">
+            <div class="card">
+                <h5>Sosialisasi TBC</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h5>Webinar TBC</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card">
+                <h5>Pelatihan Kader</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Terkini Section -->
+    <section class="berita-terkini">
+        <h2>Berita Terkini</h2>
+        <div class="berita">
+            <div class="berita-item">
+                <img src="berita1.jpg" alt="Berita 1" height="150">
+                <h3>Berita Terkini 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci vehicula, elementum nisl et, volutpat purus.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </div>
+            <div class="berita-item">
+                <img src="berita2.jpg" alt="Berita 2" height="150">
+                <h3>Berita Terkini 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci vehicula, elementum nisl et, volutpat purus.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </div>
+            <div class="berita-item">
+                <img src="berita3.jpg" alt="Berita 3" height="150">
+                <h3>Berita Terkini 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci vehicula, elementum nisl et, volutpat purus.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partner">
+        <h2>Partner with Us</h2>
+        <div class="partners">
+            <img src="partner1.png" alt="Sponsor 1" height="80">
+            <img src="partner2.png" alt="Sponsor 2" height="80">
+            <img src="partner3.png" alt="Sponsor 3" height="80">
+            <img src="partner4.png" alt="Sponsor 4" height="80">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-content">
+            <a href="#"><img src="logo.png" alt="Logo Yarsi" height="50"></a>
+            <div class="contact-info">
+                <h2>YARSI TB CARE</h2>
+                <p>Email: <a href="mailto:yarsitbcare09@gmail.com">yarsitbcare09@gmail.com</a></p>
+                <p>WhatsApp: +621888023</p>
+                <p>Instagram: <a href="#">@yarsi_tbcare</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var header = document.querySelector('.sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggle = document.querySelector('.dropdown-toggle');
+            const dropdown = document.querySelector('.dropdown');
+    
+            // Menangani klik pada link untuk menampilkan dropdown
+            dropdownToggle.addEventListener('click', function(event) {
+                event.preventDefault(); // Mencegah navigasi default
+                dropdown.classList.toggle('show'); // Toggle dropdown content
+            });
+    
+            // Menutup dropdown jika mengklik di luar dropdown
+            window.addEventListener('click', function(event) {
+                if (!dropdown.contains(event.target) && !dropdownToggle.contains(event.target)) {
+                    dropdown.classList.remove('show'); // Menutup dropdown jika klik di luar
+                }
+            });
+        });
+    </script>
+</body>
+</html>

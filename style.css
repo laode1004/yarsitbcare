@@ -1,0 +1,280 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Warna latar belakang header */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Memberikan bayangan agar header terlihat */
+    padding: 3px 0; /* Jarak vertikal di header */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Membuat logo dan link menu terpisah */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Menjaga navbar tetap berada di tengah */
+    padding: 0 20px;
+}
+
+/* Logo */
+.navbar .logo img {
+    height: 50px;
+}
+
+/* Links */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Menambahkan jarak antar item menu */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Warna teks */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #ff9800; /* Warna saat dihover */
+}
+
+/* Dropdown Menu */
+.nav-item {
+    position: relative;
+}
+
+.nav-item .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #D2DEA7;
+    z-index: 1;
+    top: 100%; /* Menempatkan dropdown tepat di bawah item */
+    left: 0; /* Menyelaraskan dengan item menu */
+    width: 200px; /* Lebar dropdown */
+    flex-direction: column; /* Mengatur item secara vertikal */
+    padding: 0; /* Menghapus padding default */
+    border-radius: 10px; /* Mengubah sudut menjadi lebih melengkung */
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.nav-item .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item .dropdown-content a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Garis pemisah antar item */
+}
+
+.nav-item .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Section styles */
+section {
+    height: 100vh; /* Each section fills the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('yrs.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center 20%;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .display-4 {
+    margin-top: -50px; /* Menggeser judul ke atas */
+    font-size: 50px; /* Ukuran font untuk h1 dengan kelas display-4 */
+    margin-bottom: 15px; /* Jarak bawah antar elemen */
+    font-weight: bold; /* Memberikan ketebalan pada teks */
+}
+
+/* Mengatur h1 (judul kedua) */
+.hero h1 {
+    font-size: 50px; /* Ukuran font untuk h1 kedua */
+    margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Mengatur paragraf */
+.hero p {
+    font-size: 18px; /* Ukuran font untuk paragraf */
+    margin-top: 20px; /* Jarak atas untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris pada paragraf */
+    max-width: 900px; /* Membatasi lebar paragraf agar tidak terlalu panjang */
+}
+
+/* Kegiatan Section */
+.kegiatan {
+    background-color: #f8f9fa; /* Light background color */
+    text-align: center;
+}
+
+.kegiatan .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kegiatan .card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Berita Terkini Section */
+.berita-terkini {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang bagian berita */
+    text-align: center;
+}
+
+.berita-terkini h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.berita {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* Agar responsif saat layar kecil */
+}
+
+.berita-item {
+    width: 30%; /* Setiap berita memiliki lebar 30% */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.berita-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.berita-item h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.berita-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.berita-item a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.berita-item a:hover {
+    text-decoration: underline;
+}
+
+/* Partner Section */
+.partner {
+    background-color: #ececec; /* Neutral background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.partner h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partner .partners img {
+    height: auto; /* Agar gambar responsif */
+    max-height: 60px; /* Menentukan ukuran maksimal tinggi gambar */
+    width: auto;
+    margin: 10px;
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #D2DEA7; /* Ganti dengan warna latar yang diinginkan */
+    color: #333; /* Teks putih */
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Menjaga elemen-elemen footer sejajar vertikal */
+    justify-content: center; /* Memberikan jarak antara logo dan informasi kontak */
+}
+
+footer a {
+    color: #333; /* Warna link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1200dd;
+    text-decoration: underline;
+}
+
+footer img {
+    height: 50px; /* Ukuran logo di footer */
+    margin-right: 20px; /* Memberikan jarak antara logo dan teks */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Jarak antar teks */
+}
+
+/* Media Query untuk responsif pada layar kecil */
+@media (max-width: 768px) {
+    .partners img {
+        max-height: 50px; /* Menurunkan ukuran gambar pada layar kecil */
+    }
+    .footer-content {
+        flex-direction: column; /* Menumpuk logo dan kontak secara vertikal pada perangkat kecil */
+        align-items: flex-start;
+    }
+    footer {
+        padding: 15px;
+    }
+}
