@@ -139,10 +139,21 @@ section {
     text-align: center;
 }
 
+.kegiatan h2{
+    font-size: 40px;
+    margin-top: -300px;
+    margin-bottom: 50px;
+}
+
 .kegiatan .row {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.kegiatan .card h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .kegiatan .card {
