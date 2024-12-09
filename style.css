@@ -7,7 +7,7 @@
 
 /* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
@@ -113,16 +113,17 @@ section {
 }
 
 .hero .display-4 {
-    margin-top: -50px; /* Menggeser judul ke atas */
+    margin-top: 50px; /* Menggeser judul ke atas */
     font-size: 50px; /* Ukuran font untuk h1 dengan kelas display-4 */
     margin-bottom: 15px; /* Jarak bawah antar elemen */
-    font-weight: bold; /* Memberikan ketebalan pada teks */
+    font-weight: 600; /* Memberikan ketebalan pada teks */
 }
 
 /* Mengatur h1 (judul kedua) */
 .hero h1 {
     font-size: 50px; /* Ukuran font untuk h1 kedua */
     margin-bottom: 30px; /* Jarak bawah */
+    font-weight: 600;
 }
 
 /* Mengatur paragraf */
@@ -235,9 +236,14 @@ section {
     margin-bottom: 20px;
 }
 
+.partner .partners{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
 .partner .partners img {
     height: auto; /* Agar gambar responsif */
-    max-height: 60px; /* Menentukan ukuran maksimal tinggi gambar */
+    max-height: 100px; /* Menentukan ukuran maksimal tinggi gambar */
     width: auto;
     margin: 10px;
 }
